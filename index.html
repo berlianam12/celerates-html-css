@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+    }
+
+    /* Container styling */
+    .container {
+      display: flex;
+      width: 900px;
+      background-color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    /* Left side: Form */
+    .form-container {
+      padding: 40px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .form-container h2 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .form-container p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 24px;
+    }
+
+    .form-container label {
+      font-size: 12px;
+      margin-top: 16px;
+      color: #333;
+    }
+
+    .form-container input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .form-container input[type="email"],
+    .form-container input[type="password"] {
+      margin-bottom: 16px;
+    }
+
+    .form-container .forgot-password {
+      text-align: right;
+      font-size: 12px;
+      color: #007bff;
+      text-decoration: none;
+      margin-bottom: 24px;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .form-container .social-signin {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+      font-size: 14px;
+    }
+
+    .form-container .social-signin button {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: white;
+      cursor: pointer;
+      flex: 1;
+    }
+
+    .form-container .social-signin button {
+      width: 20px;
+      color: black;
+    }
+
+    .form-container .signup-link {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 24px;
+      color: #666;
+    }
+
+    .form-container .signup-link a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .image-container {
+      width: 50%;
+      background-image: url('img/pexels-long-ba-mui-1130557677-22147574.jpg'); /* Replace with actual image URL */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .footer-text {
+      text-align: center;
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-container">
+      <h2>Welcome Back</h2>
+      <p>Today is a new day. It's your day. You shape it. Sign in to start managing your projects.</p>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Example@email.com">
+      
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="At least 8 characters">
+      
+      <a href="#" class="forgot-password">Forgot Password?</a>
+      
+      <button type="button">Sign in</button>
+
+      <div class="social-signin">
+        <button>Sign in with Google</button>
+        <button>Sign in with Facebook</button>
+      </div>
+      
+      <p class="signup-link">Don't you have an account? <a href="#">Sign up</a></p>
+
+      <p class="footer-text">© 2023 ALL RIGHTS RESERVED</p>
+    </div>
+
+    <div class="image-container">
+        <img src="" alt="">
+    </div>
+  </div>
+
+</body>
+</html>
